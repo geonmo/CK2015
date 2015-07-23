@@ -1,0 +1,578 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     24231,        569]
+NotebookOptionsPosition[     23869,        552]
+NotebookOutlinePosition[     24214,        567]
+CellTagsIndexPosition[     24171,        564]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"c", "=", "1.0"}], ",", 
+       RowBox[{"gamma", "=", 
+        RowBox[{"Sqrt", "[", 
+         RowBox[{"1", "+", 
+          RowBox[{"v", "^", "2"}]}], "]"}]}], ",", " ", 
+       RowBox[{"length", " ", "=", " ", "1"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"GraphicsRow", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Gray", ",", 
+            RowBox[{"Rectangle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"-", "length"}], ",", 
+                RowBox[{
+                 RowBox[{"-", "length"}], "/", "4"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"length", ",", 
+                RowBox[{"length", "/", "4"}]}], "}"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", "White", ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0", ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"c", " ", "t"}], "<", "length"}], ",", 
+                   RowBox[{"c", " ", "t"}], ",", "length"}], "]"}], ",", 
+                 "0"}], "}"}]}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
+            "Black", ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0", ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "c"}], " ", "t"}], ">", 
+                    RowBox[{"-", "length"}]}], ",", 
+                   RowBox[{
+                    RowBox[{"-", "c"}], " ", "t"}], ",", 
+                   RowBox[{"-", "length"}]}], "]"}], ",", "0"}], "}"}]}], 
+              "}"}], "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"c", " ", "t"}], "<", "length"}], ",", ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Row", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    SubscriptBox[
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<T\>\"", ",", "Italic"}], "]"}], "R"], ",", 
+                    "\"\<\!\(\*SubscriptBox[\(\\\ \), \(\\\ \)]\)= \>\"", ",", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{
+                    RowBox[{"length", "/", "c"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"3", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+                  ",", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "length"}], ",", 
+                    RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", "20"}], 
+               "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", "c"}], " ", "t"}], ">", 
+               RowBox[{"-", "length"}]}], ",", ",", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Row", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    SubscriptBox[
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<T\>\"", ",", "Italic"}], "]"}], "L"], ",", 
+                    "\"\<\!\(\*SubscriptBox[\(\\\ \), \(\\\ \)]\)= \>\"", ",", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{
+                    RowBox[{"length", "/", "c"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"3", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+                  ",", 
+                  RowBox[{"{", 
+                   RowBox[{"length", ",", 
+                    RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", "20"}], 
+               "]"}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"PlotRange", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}], ",", 
+          RowBox[{"Background", "\[Rule]", "LightRed"}], ",", " ", 
+          RowBox[{"ImageSize", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"500", ",", "250"}], "}"}]}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Gray", ",", 
+            RowBox[{"Rectangle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"-", "length"}], "/", "gamma"}], "+", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"v", " ", "t"}], " ", "-", 
+                   RowBox[{"v", "/", "2"}]}], ")"}]}], ",", 
+                RowBox[{
+                 RowBox[{"-", "length"}], "/", "4"}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"length", "/", "gamma"}], "+", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"v", " ", "t"}], " ", "-", 
+                   RowBox[{"v", "/", "2"}]}], ")"}]}], ",", 
+                RowBox[{"length", "/", "4"}]}], "}"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", "White", ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"-", "v"}], "/", "2"}], ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"c", " ", "t"}], "-", 
+                    RowBox[{"v", "/", "2"}]}], "<", 
+                    RowBox[{
+                    RowBox[{"length", "/", "gamma"}], "+", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"v", " ", "t"}], " ", "-", 
+                    RowBox[{"v", "/", "2"}]}], ")"}]}]}], ",", 
+                   RowBox[{
+                    RowBox[{"c", " ", "t"}], "-", 
+                    RowBox[{"v", "/", "2"}]}], ",", 
+                   RowBox[{
+                    RowBox[{"length", "/", "gamma"}], "+", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"v", " ", "t"}], " ", "-", 
+                    RowBox[{"v", "/", "2"}]}], ")"}]}]}], "]"}], ",", "0"}], 
+                "}"}]}], "}"}], "]"}], ",", "\[IndentingNewLine]", "Black", 
+            ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"-", "v"}], "/", "2"}], ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "c"}], " ", "t"}], "-", 
+                    RowBox[{"v", "/", "2"}]}], ">", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "length"}], "/", "gamma"}], "+", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"v", " ", "t"}], " ", "-", 
+                    RowBox[{"v", "/", "2"}]}], ")"}]}]}], ",", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "c"}], " ", "t"}], "-", 
+                    RowBox[{"v", "/", "2"}]}], ",", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "length"}], "/", "gamma"}], "+", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"v", " ", "t"}], " ", "-", 
+                    RowBox[{"v", "/", "2"}]}], ")"}]}]}], "]"}], ",", "0"}], 
+                "}"}]}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"c", " ", "t"}], "-", 
+                RowBox[{"v", "/", "2"}]}], "<", 
+               RowBox[{
+                RowBox[{"length", "/", "gamma"}], "+", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"v", " ", "t"}], " ", "-", 
+                  RowBox[{"v", "/", "2"}]}], ")"}]}]}], ",", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Row", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    SubsuperscriptBox[
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<T\>\"", ",", "Italic"}], "]"}], "R", 
+                    "\[Prime]"], ",", 
+                    "\"\<\!\(\*SubscriptBox[\(\\\ \), \(\\\ \)]\)= \>\"", ",", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"length", "/", 
+                    RowBox[{"(", 
+                    RowBox[{"c", "-", "v"}], ")"}]}], "/", "gamma"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"3", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+                  ",", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"c", " ", 
+                    RowBox[{
+                    RowBox[{"length", "/", 
+                    RowBox[{"(", 
+                    RowBox[{"c", "-", "v"}], ")"}]}], "/", "gamma"}]}], " ", 
+                    "-", " ", 
+                    RowBox[{"v", "/", "2"}]}], ",", 
+                    RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", "20"}], 
+               "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "c"}], " ", "t"}], "-", 
+                RowBox[{"v", "/", "2"}]}], ">", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"-", "length"}], "/", "gamma"}], "+", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"v", " ", "t"}], " ", "-", 
+                  RowBox[{"v", "/", "2"}]}], ")"}]}]}], ",", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Style", "[", 
+               RowBox[{
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Row", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    SubsuperscriptBox[
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<T\>\"", ",", "Italic"}], "]"}], "L", 
+                    "\[Prime]"], ",", 
+                    "\"\<\!\(\*SubscriptBox[\(\\\ \), \(\\\ \)]\)= \>\"", ",", 
+                    RowBox[{"NumberForm", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"length", "/", 
+                    RowBox[{"(", 
+                    RowBox[{"c", "+", "v"}], ")"}]}], "/", "gamma"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"3", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], 
+                  ",", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"-", "c"}], " ", 
+                    RowBox[{
+                    RowBox[{"length", "/", 
+                    RowBox[{"(", 
+                    RowBox[{"c", "+", "v"}], ")"}]}], "/", "gamma"}]}], " ", 
+                    "-", " ", 
+                    RowBox[{"v", "/", "2"}]}], ",", 
+                    RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", "20"}], 
+               "]"}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"PlotRange", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}], ",", 
+          RowBox[{"Background", "\[Rule]", "LightBlue"}], ",", " ", 
+          RowBox[{"ImageSize", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"500", ",", "250"}], "}"}]}]}], "]"}]}], "}"}], "]"}]}], 
+    "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", " ", "0.", ",", " ", "\"\<time\>\""}], "}"}], ",", 
+     "0.", ",", "2.", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"v", ",", " ", ".1", ",", " ", "\"\<velocity\>\""}], "}"}], ",",
+      ".1", ",", ".4", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "v"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.646473700829398*^9, 3.6464737160214367`*^9}, {
+   3.646473816501472*^9, 3.646473823262888*^9}, {3.6464738574611654`*^9, 
+   3.6464738782788134`*^9}, {3.6464768232022467`*^9, 3.646476832934469*^9}, {
+   3.646476922560278*^9, 3.6464769294092937`*^9}, {3.6464770221095147`*^9, 
+   3.646477046355975*^9}, {3.646477080764247*^9, 3.6464770828702507`*^9}, {
+   3.646477123760923*^9, 3.6464771275829296`*^9}, {3.6464775806845355`*^9, 
+   3.6464777710244875`*^9}, {3.646477870777503*^9, 3.64647790069156*^9}, {
+   3.646477942103628*^9, 3.646478059798843*^9}, 3.646478096892915*^9, {
+   3.6464781535820184`*^9, 3.646478472090581*^9}, {3.6464785796457677`*^9, 
+   3.6464786507705393`*^9}, {3.646478717650365*^9, 3.6464787577616587`*^9}, {
+   3.6464787891704555`*^9, 3.6464787897224865`*^9}, {3.646478821715317*^9, 
+   3.6464788385612803`*^9}, {3.6464789322906413`*^9, 
+   3.6464791260357227`*^9}, {3.646479171004293*^9, 3.6464792302773933`*^9}, {
+   3.64647926421945*^9, 3.646479346022979*^9}, {3.6464793914540606`*^9, 
+   3.646479470838207*^9}, {3.6464795011772623`*^9, 3.646479501989266*^9}, {
+   3.646479576472392*^9, 3.6464796430755086`*^9}, {3.6464796979305973`*^9, 
+   3.6464797600187025`*^9}, {3.6464797952427645`*^9, 
+   3.6464800676332426`*^9}, {3.646480121364338*^9, 3.6464801421513805`*^9}, {
+   3.6464801749924383`*^9, 3.646480234436551*^9}, {3.64648026773361*^9, 
+   3.646480313859685*^9}, {3.6464803637647696`*^9, 3.646480380011797*^9}, {
+   3.6464804373908916`*^9, 3.64648046584194*^9}, {3.64648053308736*^9, 
+   3.6464807100736256`*^9}, 3.6464807517956915`*^9, {3.646492608059346*^9, 
+   3.646492609379348*^9}, {3.6464926546114144`*^9, 3.6464926548914146`*^9}, {
+   3.646492711875498*^9, 3.6464927639755745`*^9}, 3.64649281608465*^9, {
+   3.6464928470656967`*^9, 3.646492924543809*^9}, {3.6464930201509485`*^9, 
+   3.6464931697371674`*^9}, {3.646493208037223*^9, 3.6464932391412697`*^9}, {
+   3.646493270199316*^9, 3.646493339065417*^9}, {3.6464934558415856`*^9, 
+   3.646493480912622*^9}, {3.6464938167721148`*^9, 3.64649383492914*^9}, {
+   3.6464939358462863`*^9, 3.646493941599295*^9}, {3.6464939758003445`*^9, 
+   3.6464940067963896`*^9}, {3.6464940398764477`*^9, 3.646494065544493*^9}, {
+   3.6464940990779524`*^9, 3.646494113916579*^9}, {3.646494165635071*^9, 
+   3.646494189352113*^9}, {3.6464942210089693`*^9, 3.646494270955058*^9}, {
+   3.6464943471357946`*^9, 3.6464944345335493`*^9}, {3.646494634194606*^9, 
+   3.646494711763554*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 1.545, $CellContext`v$$ = 0.1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 0., "time"}, 0., 2.}, {{
+       Hold[$CellContext`v$$], 0.1, "velocity"}, 0.1, 0.4}}, 
+    Typeset`size$$ = {1079., {135., 140.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`t$99347$$ = 0, $CellContext`v$99348$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`t$$ = 0., $CellContext`v$$ = 0.1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$99347$$, 0], 
+        Hold[$CellContext`v$$, $CellContext`v$99348$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      With[{$CellContext`c$ = 1., $CellContext`gamma$ = 
+         Sqrt[1 + $CellContext`v$$^2], $CellContext`length$ = 1}, 
+        GraphicsRow[{
+          Graphics[{Gray, 
+            
+            Rectangle[{-$CellContext`length$, (-$CellContext`length$)/
+              4}, {$CellContext`length$, $CellContext`length$/4}], White, 
+            Line[{{0, 0}, {
+               
+               If[$CellContext`c$ $CellContext`t$$ < $CellContext`length$, \
+$CellContext`c$ $CellContext`t$$, $CellContext`length$], 0}}], Black, 
+            Line[{{0, 0}, {
+               
+               If[(-$CellContext`c$) $CellContext`t$$ > \
+-$CellContext`length$, (-$CellContext`c$) $CellContext`t$$, \
+-$CellContext`length$], 0}}], 
+            If[$CellContext`c$ $CellContext`t$$ < $CellContext`length$, Null, 
+             Style[
+              Text[
+               Row[{
+                 Subscript[
+                  Style["T", Italic], $CellContext`R], 
+                 "\!\(\*SubscriptBox[\(\\ \), \(\\ \)]\)= ", 
+                 
+                 NumberForm[$CellContext`length$/$CellContext`c$, {3, 
+                  2}]}], {-$CellContext`length$, -0.5}], 20]], 
+            
+            If[(-$CellContext`c$) $CellContext`t$$ > -$CellContext`length$, 
+             Null, 
+             Style[
+              Text[
+               Row[{
+                 Subscript[
+                  Style["T", Italic], $CellContext`L], 
+                 "\!\(\*SubscriptBox[\(\\ \), \(\\ \)]\)= ", 
+                 
+                 NumberForm[$CellContext`length$/$CellContext`c$, {3, 
+                  2}]}], {$CellContext`length$, -0.5}], 20]]}, 
+           PlotRange -> {{-2, 2}, {-1, 1}}, Background -> LightRed, 
+           ImageSize -> {500, 250}], 
+          Graphics[{Gray, 
+            
+            Rectangle[{(-$CellContext`length$)/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/
+               2), (-$CellContext`length$)/
+              4}, {$CellContext`length$/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/
+               2), $CellContext`length$/4}], White, 
+            Line[{{(-$CellContext`v$$)/2, 0}, {
+               
+               If[$CellContext`c$ $CellContext`t$$ - $CellContext`v$$/
+                 2 < $CellContext`length$/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/
+                  2), $CellContext`c$ $CellContext`t$$ - $CellContext`v$$/
+                2, $CellContext`length$/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/2)], 0}}], Black, 
+            Line[{{(-$CellContext`v$$)/2, 0}, {
+               
+               If[(-$CellContext`c$) $CellContext`t$$ - $CellContext`v$$/
+                 2 > (-$CellContext`length$)/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/
+                  2), (-$CellContext`c$) $CellContext`t$$ - $CellContext`v$$/
+                2, (-$CellContext`length$)/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/2)], 0}}], 
+            If[$CellContext`c$ $CellContext`t$$ - $CellContext`v$$/
+              2 < $CellContext`length$/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/2), Null, 
+             Style[
+              Text[
+               Row[{
+                 Derivative[1][
+                  Subscript[
+                   Style["T", Italic], $CellContext`R]], 
+                 "\!\(\*SubscriptBox[\(\\ \), \(\\ \)]\)= ", 
+                 
+                 NumberForm[($CellContext`length$/($CellContext`c$ - \
+$CellContext`v$$))/$CellContext`gamma$, {3, 
+                  2}]}], {$CellContext`c$ \
+(($CellContext`length$/($CellContext`c$ - \
+$CellContext`v$$))/$CellContext`gamma$) - $CellContext`v$$/2, -0.5}], 20]], 
+            
+            If[(-$CellContext`c$) $CellContext`t$$ - $CellContext`v$$/
+              2 > (-$CellContext`length$)/$CellContext`gamma$ + \
+($CellContext`v$$ $CellContext`t$$ - $CellContext`v$$/2), Null, 
+             Style[
+              Text[
+               Row[{
+                 Derivative[1][
+                  Subscript[
+                   Style["T", Italic], $CellContext`L]], 
+                 "\!\(\*SubscriptBox[\(\\ \), \(\\ \)]\)= ", 
+                 
+                 NumberForm[($CellContext`length$/($CellContext`c$ + \
+$CellContext`v$$))/$CellContext`gamma$, {3, 
+                  2}]}], {(-$CellContext`c$) \
+(($CellContext`length$/($CellContext`c$ + \
+$CellContext`v$$))/$CellContext`gamma$) - $CellContext`v$$/2, -0.5}], 20]]}, 
+           PlotRange -> {{-2, 2}, {-1, 1}}, Background -> LightBlue, 
+           ImageSize -> {500, 250}]}]], 
+      "Specifications" :> {{{$CellContext`t$$, 0., "time"}, 0., 2., 
+         Appearance -> "Labeled"}, {{$CellContext`v$$, 0.1, "velocity"}, 0.1, 
+         0.4, Appearance -> "Labeled"}}, 
+      "Options" :> {TrackedSymbols :> {$CellContext`t$$, $CellContext`v$$}}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{1130., {196., 201.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6464941953369236`*^9, 3.64649424332041*^9, {3.646494422332328*^9, 
+   3.64649443532915*^9}, 3.6464946702116795`*^9, 3.6464947125123553`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6464792370834055`*^9, 3.6464792385734076`*^9}, 
+   3.6464808005037622`*^9}]
+},
+WindowSize->{1344, 633},
+WindowMargins->{{-6, Automatic}, {Automatic, 78}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 16467, 382, 372, "Input"],
+Cell[17049, 406, 6677, 139, 446, "Output"]
+}, Open  ]],
+Cell[23741, 548, 124, 2, 31, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
