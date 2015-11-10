@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[     10426,        298]
-NotebookOptionsPosition[      9908,        264]
-NotebookOutlinePosition[     10399,        282]
-CellTagsIndexPosition[     10356,        279]
+NotebookDataLength[      9461,        279]
+NotebookOptionsPosition[      8733,        237]
+NotebookOutlinePosition[      9437,        263]
+CellTagsIndexPosition[      9394,        260]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,11 +34,11 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[TextData[
-CounterBox["BookChapterNumber"]], "BookChapterNumber"],
+CounterBox["BookChapterNumber"]], "BookChapterNumber", "PluginEmbeddedContent"],
 
 Cell[TextData[StyleBox["\:c601\:c0c1\:bc95( Method of image charges )",
- FontFamily->"\:b9d1\:c740 \:ace0\:b515"]], "BookChapterTitle",
- CellChangeTimes->{{3.654863716656268*^9, 3.6548637364827366`*^9}}],
+ FontFamily->"\:b9d1\:c740 \:ace0\:b515"]], "BookChapterTitle", \
+"PluginEmbeddedContent"],
 
 Cell[CellGroupData[{
 
@@ -53,8 +53,7 @@ Cell[TextData[{
   FontFamily->"Arial"],
  StyleBox[". \:c601\:c0c1\:bc95\:c774\:b780?",
   FontFamily->"Arial"]
-}], "Section",
- CellChangeTimes->{{3.654863753139969*^9, 3.6548637571612773`*^9}}],
+}], "Section", "PluginEmbeddedContent"],
 
 Cell[TextData[{
  StyleBox["\:c601\:c0c1\:bc95\:c740 \:c811\:c9c0\:b41c \:b3c4\:ccb4 \:c704\
@@ -69,8 +68,7 @@ Cell[TextData[{
  StyleBox["\:b97c \:ac00\:c815\:d558\:c5ec \:c804\:ae30\:c7a5\:c744 \:ad6c\
 \:d558\:b294 \:bc29\:bc95\:c774\:b2e4.",
   FontFamily->"\:b9d1\:c740 \:ace0\:b515"]
-}], "Text",
- CellChangeTimes->{{3.6548639452113657`*^9, 3.6548640196085567`*^9}}],
+}], "Text", "PluginEmbeddedContent"],
 
 Cell[CellGroupData[{
 
@@ -87,10 +85,7 @@ Cell[TextData[{
  StyleBox["\:c810\:c804\:d558\:c640 \:bb34\:d55c \:d3c9\:ba74\:c5d0\:c11c\
 \:c758 \:c601\:c0c1\:bc95 ",
   FontFamily->"\:b9d1\:c740 \:ace0\:b515"]
-}], "Subsection",
- CellChangeTimes->{{3.654863697509351*^9, 3.6548636978436527`*^9}, {
-  3.6548637814752984`*^9, 3.6548638041749563`*^9}, {3.654864428333722*^9, 
-  3.654864430355857*^9}}],
+}], "Subsection", "PluginEmbeddedContent"],
 
 Cell[BoxData[
  TagBox[
@@ -184,86 +179,72 @@ $CellContext`x1, -$CellContext`y1]; Typeset`initDone$$ = True),
     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
    Deployed->True,
    StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Input",
- CellChangeTimes->{3.6548637005021677`*^9, 3.656111299585379*^9, 
-  3.6561114609465857`*^9}],
+  Manipulate`InterpretManipulate[1]]], "Input", "PluginEmbeddedContent"],
 
 Cell[TextData[StyleBox["\:c2e4\:c2b51) \:c67c\:cabd CDF \:d50c\:b86f\:c744 \
 \:d074\:b9ad\:d558\:c5ec \:c2e4\:c81c \:c811\:c9c0\:b41c \:bb34\:d55c \:d3c9\
 \:ba74 \:b3c4\:ccb4 \:c704\:c5d0\:c11c\:c758 \:c804\:ae30\:c7a5\:c758 \:baa8\
 \:c2b5\:c744 \:c0b4\:d3b4\:bcf4\:c790.",
- FontFamily->"\:b098\:b214\:ace0\:b515\:cf54\:b529"]], "Text",
- CellDingbat->"\[FilledSquare]",
- CellChangeTimes->{{3.654864123439766*^9, 3.6548641344193716`*^9}, {
-  3.654864236386161*^9, 3.6548642795314693`*^9}, {3.654864311499503*^9, 
-  3.654864313441798*^9}, {3.6548644916824346`*^9, 3.654864526777442*^9}}],
+ FontFamily->"\:b098\:b214\:ace0\:b515\:cf54\:b529"]], "Text", \
+"PluginEmbeddedContent",
+ CellDingbat->"\[FilledSquare]"],
 
 Cell[TextData[StyleBox["",
- FontFamily->"\:b098\:b214\:ace0\:b515\:cf54\:b529"]], "Item1",
- CellDingbat->"\[FilledSquare]",
- CellChangeTimes->{{3.654864123439766*^9, 3.6548641344193716`*^9}, {
-  3.654864236386161*^9, 3.6548642795314693`*^9}, {3.654864311499503*^9, 
-  3.654864313441798*^9}, {3.6548644916824346`*^9, 3.654864540522686*^9}}],
+ FontFamily->"\:b098\:b214\:ace0\:b515\:cf54\:b529"]], "Item1", \
+"PluginEmbeddedContent",
+ CellDingbat->"\[FilledSquare]"],
 
 Cell[TextData[StyleBox["Enter item1 text here.",
- FontFamily->"Times New Roman"]], "Text",
- CellDingbat->"\[FilledSquare]",
- CellChangeTimes->{{3.654864123439766*^9, 3.6548641344193716`*^9}, {
-  3.654864236386161*^9, 3.6548642795314693`*^9}, {3.654864311499503*^9, 
-  3.654864315922264*^9}}],
+ FontFamily->"Times New Roman"]], "Text", "PluginEmbeddedContent",
+ CellDingbat->"\[FilledSquare]"],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6548640925945625`*^9, 3.6548640926561203`*^9}}]
+Cell[BoxData[""], "Input", "PluginEmbeddedContent"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["\:cc38\:ace0\:bb38\:d5cc", "ReferenceSection",
- CellChangeTimes->{{3.65486462402737*^9, 3.654864625783346*^9}}],
+Cell["\:cc38\:ace0\:bb38\:d5cc", "ReferenceSection", "PluginEmbeddedContent"],
 
 Cell[CellGroupData[{
 
 Cell["\<\
 Wikipedia,https://en.wikipedia.org/wiki/Method_of_image_charges\
-\>", "Reference",
- CellChangeTimes->{{3.654864633331041*^9, 3.6548646462916546`*^9}}],
+\>", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646591950455`*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.654864660827478*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646629549828`*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646641628113`*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.654864665378294*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646664357204`*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{{3.6548646674434385`*^9, 3.65486466845105*^9}}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646706186824`*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646722668233`*^9}],
+Cell["", "Reference", "PluginEmbeddedContent"],
 
-Cell["", "Reference",
- CellChangeTimes->{3.6548646738352456`*^9}]
+Cell["", "Reference", "PluginEmbeddedContent"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1680, 967},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1674, 1140},
+WindowMargins->{{Automatic, -4}, {Automatic, 0}},
+Visible->True,
+AuthoredSize->{1674, 1140},
+ScrollingOptions->{"HorizontalScrollRange"->Fit,
+"VerticalScrollRange"->Fit},
+ShowCellBracket->False,
+Deployed->True,
+CellContext->Notebook,
+TrackCellChangeTimes->False,
 Magnification:>1.5 Inherited,
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (December 4, 2014)",
 StyleDefinitions->FrontEnd`FileName[{"Book"}, "Textbook.nb", 
@@ -282,34 +263,34 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1486, 35, 69, 1, 232, "BookChapterNumber"],
-Cell[1558, 38, 203, 2, 202, "BookChapterTitle"],
+Cell[1486, 35, 94, 1, 211, "BookChapterNumber"],
+Cell[1583, 38, 162, 2, 55, "BookChapterTitle"],
 Cell[CellGroupData[{
-Cell[1786, 44, 335, 12, 86, "Section"],
-Cell[2124, 58, 739, 14, 37, "Text"],
+Cell[1770, 44, 292, 11, 45, "Section"],
+Cell[2065, 57, 694, 13, 25, "Text"],
 Cell[CellGroupData[{
-Cell[2888, 76, 460, 16, 55, "Subsection"],
-Cell[3351, 94, 4144, 94, 561, "Input"],
-Cell[7498, 190, 585, 8, 30, "Text"],
-Cell[8086, 200, 339, 5, 24, "Item1"],
-Cell[8428, 207, 291, 5, 32, "Text"],
-Cell[8722, 214, 96, 1, 43, "Input"]
+Cell[2784, 74, 315, 13, 28, "Subsection"],
+Cell[3102, 89, 4076, 92, 539, "Input"],
+Cell[7181, 183, 396, 6, 18, "Text"],
+Cell[7580, 191, 150, 3, 18, "Item1"],
+Cell[7733, 196, 148, 2, 20, "Text"],
+Cell[7884, 200, 51, 0, 21, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8867, 221, 117, 1, 417, "ReferenceSection"],
+Cell[7984, 206, 77, 0, 47, "ReferenceSection"],
 Cell[CellGroupData[{
-Cell[9009, 226, 160, 3, 26, "Reference"],
-Cell[9172, 231, 65, 1, 26, "Reference"],
-Cell[9240, 234, 63, 1, 26, "Reference"],
-Cell[9306, 237, 65, 1, 26, "Reference"],
-Cell[9374, 240, 65, 1, 26, "Reference"],
-Cell[9442, 243, 63, 1, 26, "Reference"],
-Cell[9508, 246, 65, 1, 26, "Reference"],
-Cell[9576, 249, 88, 1, 26, "Reference"],
-Cell[9667, 252, 65, 1, 26, "Reference"],
-Cell[9735, 255, 65, 1, 26, "Reference"],
-Cell[9803, 258, 65, 1, 26, "Reference"]
+Cell[8086, 210, 117, 2, 20, "Reference"],
+Cell[8206, 214, 46, 0, 20, "Reference"],
+Cell[8255, 216, 46, 0, 20, "Reference"],
+Cell[8304, 218, 46, 0, 20, "Reference"],
+Cell[8353, 220, 46, 0, 20, "Reference"],
+Cell[8402, 222, 46, 0, 20, "Reference"],
+Cell[8451, 224, 46, 0, 20, "Reference"],
+Cell[8500, 226, 46, 0, 20, "Reference"],
+Cell[8549, 228, 46, 0, 20, "Reference"],
+Cell[8598, 230, 46, 0, 20, "Reference"],
+Cell[8647, 232, 46, 0, 20, "Reference"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -319,4 +300,4 @@ Cell[9803, 258, 65, 1, 26, "Reference"]
 
 (* End of internal cache information *)
 
-(* NotebookSignature NuD@#GsurTCESAKNYR@4dOP2 *)
+(* NotebookSignature 0xTs5DgYlSELtAKKmSRMz1zA *)
